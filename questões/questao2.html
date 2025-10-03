@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>calcular area do triangulo</h1>
+  <input type="number" id="n1">
+  <input type="number" id="n2">
+  <button onclick="mensagem()">calcular</button>
+  
+  <script>
+    function calcular(valor1,valor2){
+      return(valor1*valor2)/2;
+    }
+    function mensagem(){
+      let valor1 = Number(document.getElementById("n1").value);
+      let valor2 = Number(document.getElementById("n2").value);
+      let area = calcular(valor1, valor2);
+      document.getElementById("resultado").value = "o resultado é  " + area
+    }
+  </script>
+  
+  
+  <output id="resultado"></output>
+</body>
+</html>

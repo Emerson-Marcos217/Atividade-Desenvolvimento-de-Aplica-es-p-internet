@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>detector de numero par</h1>
+    <input type="number" id="n1" placeholder="digite seu numero">
+    <button onclick="mensagem()">verificar</button>
+    <output id="resultado"></output>
+    <script>
+        function verificar(numero){
+            if (numero % 2 == 0){
+                return true;
+            }else{
+                return false
+            }
+        }
+        function mensagem(){
+            let numero = Number(document.getElementById("n1").value);
+            let resultado = verificar(numero)
+            document.getElementById("resultado").value = resultado
+        }
+    </script>
+</body>
+</html>
